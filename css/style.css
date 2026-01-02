@@ -1,0 +1,662 @@
+/* Import Google Font - Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Reset and Base Styles */
+BODY { 
+    margin: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==================== */
+/* FONT AWESOME ICON STYLES */
+/* ==================== */
+
+i[class^="fa"],
+i[class*=" fa"] {
+    font-style: normal;              /* Prevent italic */
+    font-size: 1em;
+    line-height: 1;
+    vertical-align: middle;
+    color: #000000;                  /* Steel Gray */
+    margin-right: 6px;
+}
+
+/* Icons inside links */
+a i[class^="fa"],
+a i[class*=" fa"] {
+    color: inherit;
+}
+
+/* Hover effect for icons inside links */
+a:hover i[class^="fa"],
+a:hover i[class*=" fa"] {
+    color: #6e6e6e;                  /* Darker green on hover */
+}
+
+/* Larger icons utility */
+.icon-lg {
+    font-size: 1.4em;
+}
+
+.icon-xl {
+    font-size: 1.8em;
+}
+
+/* Icon-only buttons or links */
+.icon-only i {
+    margin-right: 0;
+}
+
+/* Icons in lists */
+.barelist i {
+    width: 18px;
+    text-align: center;
+}
+
+/* Icons in right column (spacing refinement) */
+#right i {
+    margin-right: 8px;
+}
+
+/* ==================== */
+/* BLOCKQUOTE STYLING */
+/* ==================== */
+
+blockquote {
+    margin: 20px auto;
+    padding: 12px 18px;
+    max-width: 90%;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.05em;
+    letter-spacing: 0.8px;
+    color: #000000;                  /* Steel Gray text */
+    background-color: #e9e9e9;       /* Very light green tint */
+    border-left: 4px solid #000000;  /* Strong academic accent */
+    border-right: 1px dashed #000000;
+    line-height: 1.6;
+}
+
+/* Remove default quote marks */
+blockquote::before,
+blockquote::after {
+    content: "";
+}
+
+/* Citation / author */
+blockquote cite {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color: #666;
+    text-align: right;
+    font-style: normal;
+}
+
+/* Inline emphasis inside blockquote */
+blockquote em {
+    font-style: normal;
+    color: #000000;
+}
+
+/* Links inside blockquote */
+blockquote a {
+    color: #000000;
+    border-bottom: 1px dashed transparent;
+}
+
+blockquote a:hover {
+    color: #71797e;
+    border-bottom-color: #000000;
+}
+
+
+/* Link Styles - Steel Gray COLOR */
+A { 
+    text-decoration: none;
+    font-weight: normal;
+    color: #000000; /* Steel Gray Color */
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+A:hover { 
+    text-decoration: none;
+    border-style: dashed none dashed none; 
+    border-width: 1px; 
+    border-color: #71797e; /* Darker green border on hover */
+    color: #71797e; /* Darker green on hover */
+}
+
+/* Heading Styles with Bebas Neue Font */
+h1, h2, h3, h4, .head {
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+h1 {
+    color: #000000; 
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+}
+
+h2, h3, h4, .head {
+    padding: 2px;
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+}
+
+/* Special Link Styles - Steel Gray COLOR */
+A.h { 
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal; 
+    color: #fff; 
+    background-color: #666; 
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+A.h:visited { 
+    color: #fff; 
+}
+A.h:hover { 
+    background-color: #fff; 
+    text-decoration: none; 
+    color: #666; 
+    border: 1px dashed #666;
+}	
+
+/* Remove underline from name in the table */
+u {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/* For the specific name with <u> tag */
+#left table td u {
+    text-decoration: none;
+    border-bottom: none;
+    color: #000000; /* Keep name in black, not green */
+}
+
+/* Table Text */
+table {
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Table links - also Steel Gray */
+table a {
+    color: #000000; /* Steel Gray */
+}
+
+table a:hover {
+    color: #71797e; /* Darker green on hover */
+    border-color: #71797e;
+}
+
+/* Main Container Layout - Desktop First */
+.front {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+#left {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Links in left column */
+#left a {
+    color: #000000; /* Steel Gray */
+}
+
+#left a:hover {
+    color: #71797e;
+}
+
+#center {
+    flex: 2;
+    min-width: 300px;
+    padding: 10px 20px;
+    border-left: 1px dashed #666;
+    border-right: 1px dashed #666;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Links in center column */
+#center a {
+    color: #000000; /* Steel Gray */
+}
+
+#center a:hover {
+    color: #71797e;
+}
+
+#center li a {
+    color: #000000; /* Specific for list links */
+}
+
+#right {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    line-height: 2;
+    font-size: 14px;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Links in right column */
+#right a {
+    color: #000000; /* Steel Gray */
+}
+
+#right a:hover {
+    color: #71797e;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Logo Image */
+.logo-img {
+    width: 180px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Lists */
+.barelist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.barelist li {
+    margin-bottom: 5px;
+}
+
+/* Barelist links */
+.barelist a {
+    color: #000000; /* Steel Gray */
+}
+
+.barelist a:hover {
+    color: #71797e;
+}
+
+.pubinfo {
+    margin: 10px;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+}
+
+.more {
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    text-align: right;
+    letter-spacing: 0.5px;
+}
+A.more { 
+    text-decoration: none;
+    color: #000000; /* Steel Gray */
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+}
+A.more:hover { 
+    border-style: dashed; 
+    border-width: 1px; 
+    border-color: #71797e; /* Darker green border */
+    color: #71797e; /* Darker green on hover */
+}
+
+/* ==================== */
+/* ICON LIST (HORIZONTAL) */
+/* ==================== */
+
+.iconlist {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.iconlist li {
+    margin: 0;
+}
+
+.iconlist a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.iconlist i {
+    font-size: 1.5em;
+    color: #000000; /* Steel Gray */
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.iconlist a:hover i {
+    color: #71797e;
+    transform: scale(1.15);
+}
+
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Table cell specific styling */
+td {
+    padding: 4px 2px;
+}
+
+/* Email table styling */
+table table {
+    display: inline-table;
+}
+
+/* Email links - keep them Steel Gray too */
+table table a {
+    color: #000000;
+}
+
+table table a:hover {
+    color: #71797e;
+}
+
+/* Remove bold from some elements */
+b, strong {
+    font-weight: normal;
+    font-size: 1.05em;
+}
+
+/* For visited links - slightly different shade */
+a:visited {
+    color: #71797e; /* Forest Green for visited links */
+}
+
+/* For active links (when clicked) */
+a:active {
+    color: #71797e;
+}
+
+/* ==================== */
+/* MEDIA QUERIES - RESPONSIVE DESIGN */
+/* ==================== */
+
+/* Tablet Devices (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+    .front {
+        max-width: 95%;
+        padding: 15px;
+        font-size: 15px;
+    }
+    
+    #center {
+        flex: 3;
+    }
+    
+    #right {
+        flex: 1;
+    }
+    
+    .profile-img {
+        width: 180px;
+    }
+    
+    .logo-img {
+        width: 180px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2, h3, h4, .head {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile Devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    BODY {
+        margin: 10px;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+    }
+    
+    .front {
+        flex-direction: column;
+        padding: 5px;
+        font-size: 17px;
+    }
+    
+    #left, #center, #right {
+        width: 100%;
+        flex: none;
+        padding: 15px 10px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        font-size: 17px;
+    }
+    
+    #center {
+        border-left: none;
+        border-right: none;
+    }
+    
+    #right {
+        border-bottom: none;
+        font-size: 16px;
+    }
+    
+    .profile-img {
+        width: 150px;
+        margin: 0 auto 15px;
+        display: block;
+        float: none;
+    }
+    
+    .logo-img {
+        width: 100px;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+    h2, h3, h4, .head {
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+    
+    /* Make tables more mobile-friendly */
+    table {
+        font-size: 16px;
+    }
+    
+    /* Adjust spacing for mobile */
+    .more {
+        font-size: 14px;
+    }
+    
+    /* Improve link visibility on mobile */
+    A {
+        padding: 2px 0;
+        font-size: 17px;
+        color: #000000; /* Steel Gray on mobile too */
+    }
+    
+    A:hover {
+        color: #71797e;
+    }
+    
+    /* Center align content on mobile */
+    #left table,
+    #right table {
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    /* Adjust right column layout for mobile */
+    #right table {
+        height: auto;
+    }
+    
+    #right td {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    #right .barelist {
+        text-align: center;
+    }
+    
+    #right .barelist li {
+        margin: 8px 0;
+        font-size: 16px;
+    }
+    
+    /* Center-align all text on mobile */
+    #left, #center {
+        text-align: center;
+    }
+    
+    /* Center list items */
+    #center ul {
+        padding-left: 0;
+        text-align: center;
+        list-style-position: inside;
+    }
+    
+    #center li {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    
+    /* Center links in lists */
+    #center li a {
+        display: inline-block;
+    }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    BODY {
+        margin: 5px;
+        font-size: 16px;
+    }
+    
+    .front {
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    #left, #center, #right {
+        padding: 12px 5px;
+        font-size: 16px;
+    }
+    
+    .profile-img {
+        width: 130px;
+    }
+    
+    h1 {
+        font-size: 1.9rem;
+    }
+    
+    h2, h3, h4, .head {
+        font-size: 1.6rem;
+    }
+    
+    /* Make email display better on small screens */
+    table table {
+        display: inline-block;
+    }
+    
+    /* Center all content */
+    #left > table,
+    #center > ul,
+    #right > table {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Remove floats */
+    img[align="left"] {
+        float: none;
+    }
+    
+    /* Adjust link sizes */
+    A {
+        font-size: 16px;
+        color: #000000; /* Steel Gray */
+    }
+    
+    A:hover {
+        color: #71797e;
+    }
+}
+
+/* Large Desktop Screens (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+    .front {
+        max-width: 1100px;
+    }
+    
+    #center {
+        padding: 10px 30px;
+    }
+    
+    h1 {
+        font-size: 2.4rem;
+    }
+    
+    h2, h3, h4, .head {
+        font-size: 1.8rem;
+    }
+    
+    /* Links on larger screens */
+    A {
+        transition: color 0.2s ease, border-color 0.2s ease;
+    }
+}
