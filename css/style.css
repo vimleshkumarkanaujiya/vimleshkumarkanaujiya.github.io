@@ -1,12 +1,12 @@
-/* Import Google Font - Bebas Neue */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Import Google Font - Baskervville */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 
 /* Reset and Base Styles */
 BODY { 
     margin: 20px;
     background-color: #ffffff;
     color: #000000;
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 0.5px;
@@ -73,7 +73,7 @@ blockquote {
     margin: 20px auto;
     padding: 12px 18px;
     max-width: 90%;
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     font-size: 1.05em;
     letter-spacing: 0.8px;
     color: #000000;                  /* Steel Gray text */
@@ -123,7 +123,7 @@ A {
     text-decoration: none;
     font-weight: normal;
     color: #000000; /* Steel Gray Color */
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     font-size: 15px;
 }
 A:hover { 
@@ -134,9 +134,9 @@ A:hover {
     color: #71797e; /* Darker green on hover */
 }
 
-/* Heading Styles with Bebas Neue Font */
+/* Heading Styles with Baskervville Font */
 h1, h2, h3, h4, .head {
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     letter-spacing: 1px;
     font-weight: normal;
 }
@@ -155,7 +155,7 @@ h2, h3, h4, .head {
 
 /* Special Link Styles - Steel Gray COLOR */
 A.h { 
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     font-weight: normal; 
     color: #fff; 
     background-color: #666; 
@@ -187,7 +187,7 @@ u {
 
 /* Table Text */
 table {
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     letter-spacing: 0.5px;
 }
 
@@ -209,7 +209,7 @@ table a:hover {
     margin: 0 auto;
     padding: 10px;
     font-size: 16px;
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     letter-spacing: 0.5px;
 }
 
@@ -217,7 +217,7 @@ table a:hover {
     flex: 1;
     min-width: 250px;
     padding: 10px;
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     font-size: 16px;
 }
 
@@ -236,7 +236,7 @@ table a:hover {
     padding: 10px 20px;
     border-left: 1px dashed #666;
     border-right: 1px dashed #666;
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     font-size: 16px;
 }
 
@@ -259,7 +259,7 @@ table a:hover {
     padding: 10px;
     line-height: 2;
     font-size: 14px;
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     letter-spacing: 0.5px;
 }
 
@@ -292,7 +292,7 @@ table a:hover {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     letter-spacing: 0.5px;
 }
 
@@ -311,11 +311,11 @@ table a:hover {
 
 .pubinfo {
     margin: 10px;
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
 }
 
 .more {
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
     font-size: 13px;
     text-align: right;
     letter-spacing: 0.5px;
@@ -323,7 +323,7 @@ table a:hover {
 A.more { 
     text-decoration: none;
     color: #000000; /* Steel Gray */
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
 }
 A.more:hover { 
     border-style: dashed; 
@@ -373,7 +373,7 @@ A.more:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
 }
 
 /* Table cell specific styling */
