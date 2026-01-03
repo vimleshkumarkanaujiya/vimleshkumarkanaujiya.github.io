@@ -28,6 +28,17 @@ i[class*=" fa"] {
     margin-right: 6px;
 }
 
+/* Selection text across platforms */
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
 /* Icons inside links */
 a i[class^="fa"],
 a i[class*=" fa"] {
