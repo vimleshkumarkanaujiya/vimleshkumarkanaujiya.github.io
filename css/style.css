@@ -1,7 +1,7 @@
 /* ===== LATIN MODERN ROMAN FONT IMPORTS ===== */
 @font-face {
   font-family: 'Latin Modern Roman';
-  src: url('./fonts/lmroman10-regular.woff2') format('woff2');
+  src: url('fonts/lmroman10-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'Latin Modern Roman';
-  src: url('./fonts/lmroman10-italic.woff2') format('woff2');
+  src: url('fonts/lmroman10-italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Latin Modern Roman';
-  src: url('./fonts/lmroman10-bold.woff2') format('woff2');
+  src: url('fonts/lmroman10-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'Latin Modern Roman';
-  src: url('./fonts/lmroman10-bolditalic.woff2') format('woff2');
+  src: url('fonts/lmroman10-bolditalic.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
