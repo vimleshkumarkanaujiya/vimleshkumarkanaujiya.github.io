@@ -31,6 +31,75 @@
   font-display: swap;
 }
 
+/* ===== ADDITIONAL LATIN MODERN VARIANTS ===== */
+/* Roman Caps */
+@font-face {
+  font-family: 'Latin Modern Roman Caps';
+  src: url('fonts/lmromancaps10-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Latin Modern Roman Caps';
+  src: url('fonts/lmromancaps10-oblique.woff2') format('woff2');
+  font-weight: 400;
+  font-style: oblique;
+  font-display: swap;
+}
+
+/* Roman Demi */
+@font-face {
+  font-family: 'Latin Modern Roman Demi';
+  src: url('fonts/lmromandemi10-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Latin Modern Roman Demi';
+  src: url('fonts/lmromandemi10-oblique.woff2') format('woff2');
+  font-weight: 400;
+  font-style: oblique;
+  font-display: swap;
+}
+
+/* Roman Dunhill */
+@font-face {
+  font-family: 'Latin Modern Roman Dunhill';
+  src: url('fonts/lmromandunh10-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Latin Modern Roman Dunhill';
+  src: url('fonts/lmromandunh10-oblique.woff2') format('woff2');
+  font-weight: 400;
+  font-style: oblique;
+  font-display: swap;
+}
+
+/* Roman Slant */
+@font-face {
+  font-family: 'Latin Modern Roman Slant';
+  src: url('fonts/lmromanslant10-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Latin Modern Roman Slant';
+  src: url('fonts/lmromanslant10-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ===== BASE STYLES ===== */
 body { 
     margin: 20px;
