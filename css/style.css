@@ -1,111 +1,12 @@
-/* ===== LATIN MODERN ROMAN FONT IMPORTS ===== */
-@font-face {
-  font-family: 'Latin Modern Roman';
-  src: url('fonts/lmroman10-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+/* Import Google Font - Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
-  font-family: 'Latin Modern Roman';
-  src: url('fonts/lmroman10-italic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Latin Modern Roman';
-  src: url('fonts/lmroman10-bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Latin Modern Roman';
-  src: url('fonts/lmroman10-bolditalic.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* ===== ADDITIONAL LATIN MODERN VARIANTS ===== */
-/* Roman Caps */
-@font-face {
-  font-family: 'Latin Modern Roman Caps';
-  src: url('fonts/lmromancaps10-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Latin Modern Roman Caps';
-  src: url('fonts/lmromancaps10-oblique.woff') format('woff');
-  font-weight: 400;
-  font-style: oblique;
-  font-display: swap;
-}
-
-/* Roman Demi */
-@font-face {
-  font-family: 'Latin Modern Roman Demi';
-  src: url('fonts/lmromandemi10-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Latin Modern Roman Demi';
-  src: url('fonts/lmromandemi10-oblique.woff') format('woff');
-  font-weight: 400;
-  font-style: oblique;
-  font-display: swap;
-}
-
-/* Roman Dunhill */
-@font-face {
-  font-family: 'Latin Modern Roman Dunhill';
-  src: url('fonts/lmromandunh10-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Latin Modern Roman Dunhill';
-  src: url('fonts/lmromandunh10-oblique.woff') format('woff');
-  font-weight: 400;
-  font-style: oblique;
-  font-display: swap;
-}
-
-/* Roman Slant */
-@font-face {
-  font-family: 'Latin Modern Roman Slant';
-  src: url('fonts/lmromanslant10-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Latin Modern Roman Slant';
-  src: url('fonts/lmromanslant10-bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* ===== BASE STYLES ===== */
-body { 
+/* Reset and Base Styles */
+BODY { 
     margin: 20px;
     background-color: #ffffff;
     color: #000000;
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 0.5px;
@@ -113,37 +14,33 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-::selection {
-  background: #000;
-  color: #fff;
-}
+/* ==================== */
+/* FONT AWESOME ICON STYLES */
+/* ==================== */
 
-::-moz-selection {
-  background: #000;
-  color: #fff;
-}
-
-/* ===== ICON STYLES ===== */
 i[class^="fa"],
 i[class*=" fa"] {
-    font-style: normal;
+    font-style: normal;              /* Prevent italic */
     font-size: 1em;
     line-height: 1;
     vertical-align: middle;
-    color: #000000;
+    color: #000000;                  /* Steel Gray */
     margin-right: 6px;
 }
 
+/* Icons inside links */
 a i[class^="fa"],
 a i[class*=" fa"] {
     color: inherit;
 }
 
+/* Hover effect for icons inside links */
 a:hover i[class^="fa"],
 a:hover i[class*=" fa"] {
-    color: #6e6e6e;
+    color: #6e6e6e;             
 }
 
+/* Larger icons utility */
 .icon-lg {
     font-size: 1.4em;
 }
@@ -152,39 +49,47 @@ a:hover i[class*=" fa"] {
     font-size: 1.8em;
 }
 
+/* Icon-only buttons or links */
 .icon-only i {
     margin-right: 0;
 }
 
+/* Icons in lists */
 .barelist i {
     width: 18px;
     text-align: center;
 }
 
+/* Icons in right column (spacing refinement) */
 #right i {
     margin-right: 8px;
 }
 
-/* ===== BLOCKQUOTE ===== */
+/* ==================== */
+/* BLOCKQUOTE STYLING */
+/* ==================== */
+
 blockquote {
     margin: 20px auto;
     padding: 12px 18px;
     max-width: 90%;
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.05em;
     letter-spacing: 0.8px;
-    color: #000000;
-    background-color: #e9e9e9;
-    border-left: 4px solid #000000;
+    color: #000000;                  /* Steel Gray text */
+    background-color: #e9e9e9;   
+    border-left: 4px solid #000000;  /* Strong academic accent */
     border-right: 1px dashed #000000;
     line-height: 1.6;
 }
 
+/* Remove default quote marks */
 blockquote::before,
 blockquote::after {
     content: "";
 }
 
+/* Citation / author */
 blockquote cite {
     display: block;
     margin-top: 8px;
@@ -195,11 +100,13 @@ blockquote cite {
     font-style: normal;
 }
 
+/* Inline emphasis inside blockquote */
 blockquote em {
-    font-style: italic;
+    font-style: normal;
     color: #000000;
 }
 
+/* Links inside blockquote */
 blockquote a {
     color: #000000;
     border-bottom: 1px dashed transparent;
@@ -210,98 +117,91 @@ blockquote a:hover {
     border-bottom-color: #000000;
 }
 
-/* ===== LINKS ===== */
-a { 
+
+/* Link Styles - Steel Gray COLOR */
+A { 
     text-decoration: none;
     font-weight: normal;
-    color: #000000;
-    font-family: 'Latin Modern Roman', serif;
+    color: #000000; /* Steel Gray Color */
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
-
-a:hover { 
+A:hover { 
     text-decoration: none;
     border-style: dashed none dashed none; 
     border-width: 1px; 
-    border-color: #71797e;
-    color: #71797e;
+    border-color: #71797e; /* Darker green border on hover */
+    color: #71797e; /* Darker green on hover */
 }
 
-/* ===== HEADINGS ===== */
+/* Heading Styles with Bebas Neue Font */
 h1, h2, h3, h4, .head {
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 1px;
     font-weight: normal;
 }
 
 h1 {
-    color: #000000;
+    color: #000000; 
     font-size: 2.2rem;
     letter-spacing: 1.5px;
-    font-weight: 400;
 }
 
 h2, h3, h4, .head {
     padding: 2px;
     font-size: 1.6rem;
     letter-spacing: 1.2px;
-    font-weight: 700;
 }
 
-/* ===== SPECIAL LINK STYLES ===== */
-a.h { 
-    font-family: 'Latin Modern Roman', serif;
+/* Special Link Styles - Steel Gray COLOR */
+A.h { 
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal; 
     color: #fff; 
     background-color: #666; 
     text-decoration: none;
     letter-spacing: 1px;
 }
-
-a.h:visited { 
+A.h:visited { 
     color: #fff; 
 }
-
-a.h:hover { 
+A.h:hover { 
     background-color: #fff; 
     text-decoration: none; 
     color: #666; 
     border: 1px dashed #666;
-}
+}	
 
-/* ===== TABLES ===== */
-table {
-    font-family: 'Latin Modern Roman', serif;
-    letter-spacing: 0.5px;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table a {
-    color: #000000;
-}
-
-table a:hover {
-    color: #71797e;
-    border-color: #71797e;
-}
-
-td {
-    padding: 4px 2px;
-}
-
+/* Remove underline from name in the table */
 u {
     text-decoration: none;
     border-bottom: none;
 }
 
+/* For the specific name with <u> tag */
 #left table td u {
     text-decoration: none;
     border-bottom: none;
-    color: #000000;
+    color: #000000; /* Keep name in black, not green */
 }
 
-/* ===== LAYOUT ===== */
+/* Table Text */
+table {
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Table links - also Steel Gray */
+table a {
+    color: #000000; /* Steel Gray */
+}
+
+table a:hover {
+    color: #71797e; /* Darker green on hover */
+    border-color: #71797e;
+}
+
+/* Main Container Layout - Desktop First */
 .front {
     display: flex;
     flex-wrap: wrap;
@@ -309,7 +209,7 @@ u {
     margin: 0 auto;
     padding: 10px;
     font-size: 16px;
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -317,12 +217,13 @@ u {
     flex: 1;
     min-width: 250px;
     padding: 10px;
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
 }
 
+/* Links in left column */
 #left a {
-    color: #000000;
+    color: #000000; /* Steel Gray */
 }
 
 #left a:hover {
@@ -335,12 +236,13 @@ u {
     padding: 10px 20px;
     border-left: 1px dashed #666;
     border-right: 1px dashed #666;
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
 }
 
+/* Links in center column */
 #center a {
-    color: #000000;
+    color: #000000; /* Steel Gray */
 }
 
 #center a:hover {
@@ -348,7 +250,7 @@ u {
 }
 
 #center li a {
-    color: #000000;
+    color: #000000; /* Specific for list links */
 }
 
 #right {
@@ -357,19 +259,20 @@ u {
     padding: 10px;
     line-height: 2;
     font-size: 14px;
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.5px;
 }
 
+/* Links in right column */
 #right a {
-    color: #000000;
+    color: #000000; /* Steel Gray */
 }
 
 #right a:hover {
     color: #71797e;
 }
 
-/* ===== IMAGES ===== */
+/* Profile Image */
 .profile-img {
     width: 200px;
     height: auto;
@@ -377,18 +280,19 @@ u {
     margin-bottom: 15px;
 }
 
+/* Logo Image */
 .logo-img {
     width: 180px;
     height: auto;
     max-width: 100%;
 }
 
-/* ===== LISTS ===== */
+/* Lists */
 .barelist {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -396,41 +300,42 @@ u {
     margin-bottom: 5px;
 }
 
+/* Barelist links */
 .barelist a {
-    color: #000000;
+    color: #000000; /* Steel Gray */
 }
 
 .barelist a:hover {
     color: #71797e;
 }
 
-/* ===== MISC ===== */
 .pubinfo {
     margin: 10px;
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
 }
 
 .more {
-    font-family: 'Latin Modern Roman', serif;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
     font-size: 13px;
     text-align: right;
     letter-spacing: 0.5px;
 }
-
-a.more { 
+A.more { 
     text-decoration: none;
-    color: #000000;
-    font-family: 'Latin Modern Roman', serif;
+    color: #000000; /* Steel Gray */
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
 }
-
-a.more:hover { 
+A.more:hover { 
     border-style: dashed; 
     border-width: 1px; 
-    border-color: #71797e;
-    color: #71797e;
+    border-color: #71797e; /* Darker green border */
+    color: #71797e; /* Darker green on hover */
 }
 
-/* ===== ICON LIST ===== */
+/* ==================== */
+/* ICON LIST (HORIZONTAL) */
+/* ==================== */
+
 .iconlist {
     list-style: none;
     padding: 0;
@@ -454,7 +359,7 @@ a.more:hover {
 
 .iconlist i {
     font-size: 1.5em;
-    color: #000000;
+    color: #000000; /* Steel Gray */
     transition: transform 0.15s ease, color 0.15s ease;
 }
 
@@ -463,21 +368,53 @@ a.more:hover {
     transform: scale(1.15);
 }
 
-/* ===== FONT WEIGHTS ===== */
-b, strong {
-    font-weight: 700;
-    font-size: 1.05em;
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Bebas Neue', 'Trap', 'Arial Narrow', Arial, sans-serif;
 }
 
-a:visited {
+/* Table cell specific styling */
+td {
+    padding: 4px 2px;
+}
+
+/* Email table styling */
+table table {
+    display: inline-table;
+}
+
+/* Email links - keep them Steel Gray too */
+table table a {
+    color: #000000;
+}
+
+table table a:hover {
     color: #71797e;
 }
 
+/* Remove bold from some elements */
+b, strong {
+    font-weight: normal;
+    font-size: 1.05em;
+}
+
+/* For visited links - slightly different shade */
+a:visited {
+    color: #71797e; /* Forest Green for visited links */
+}
+
+/* For active links (when clicked) */
 a:active {
     color: #71797e;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* ==================== */
+/* MEDIA QUERIES - RESPONSIVE DESIGN */
+/* ==================== */
+
 /* Tablet Devices (768px to 1024px) */
 @media screen and (max-width: 1024px) {
     .front {
@@ -513,7 +450,7 @@ a:active {
 
 /* Mobile Devices (up to 767px) */
 @media screen and (max-width: 767px) {
-    body {
+    BODY {
         margin: 10px;
         font-size: 18px;
         letter-spacing: 0.7px;
@@ -548,6 +485,7 @@ a:active {
         width: 150px;
         margin: 0 auto 15px;
         display: block;
+        float: none;
     }
     
     .logo-img {
@@ -568,24 +506,28 @@ a:active {
         text-align: center;
     }
     
+    /* Make tables more mobile-friendly */
     table {
         font-size: 16px;
     }
     
+    /* Adjust spacing for mobile */
     .more {
         font-size: 14px;
     }
     
-    a {
+    /* Improve link visibility on mobile */
+    A {
         padding: 2px 0;
         font-size: 17px;
-        color: #000000;
+        color: #000000; /* Steel Gray on mobile too */
     }
     
-    a:hover {
+    A:hover {
         color: #71797e;
     }
     
+    /* Center align content on mobile */
     #left table,
     #right table {
         margin: 0 auto;
@@ -593,6 +535,7 @@ a:active {
         text-align: center;
     }
     
+    /* Adjust right column layout for mobile */
     #right table {
         height: auto;
     }
@@ -612,10 +555,12 @@ a:active {
         font-size: 16px;
     }
     
+    /* Center-align all text on mobile */
     #left, #center {
         text-align: center;
     }
     
+    /* Center list items */
     #center ul {
         padding-left: 0;
         text-align: center;
@@ -627,6 +572,7 @@ a:active {
         margin-bottom: 8px;
     }
     
+    /* Center links in lists */
     #center li a {
         display: inline-block;
     }
@@ -634,7 +580,7 @@ a:active {
 
 /* Small Mobile Devices (up to 480px) */
 @media screen and (max-width: 480px) {
-    body {
+    BODY {
         margin: 5px;
         font-size: 16px;
     }
@@ -661,10 +607,12 @@ a:active {
         font-size: 1.6rem;
     }
     
+    /* Make email display better on small screens */
     table table {
         display: inline-block;
     }
     
+    /* Center all content */
     #left > table,
     #center > ul,
     #right > table {
@@ -673,16 +621,18 @@ a:active {
         margin-right: auto;
     }
     
+    /* Remove floats */
     img[align="left"] {
         float: none;
     }
     
-    a {
+    /* Adjust link sizes */
+    A {
         font-size: 16px;
-        color: #000000;
+        color: #000000; /* Steel Gray */
     }
     
-    a:hover {
+    A:hover {
         color: #71797e;
     }
 }
@@ -705,7 +655,8 @@ a:active {
         font-size: 1.8rem;
     }
     
-    a {
+    /* Links on larger screens */
+    A {
         transition: color 0.2s ease, border-color 0.2s ease;
     }
 }
